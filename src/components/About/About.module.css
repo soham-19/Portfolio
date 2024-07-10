@@ -1,0 +1,89 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  background-color: var(--color-background-dark);
+  border-radius: 20px;
+  padding: 60px;
+  margin-top: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 2rem; /* Decreased font size */
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.aboutItem {
+  background: rgba(255, 255, 255, 0.1); /* Glass-like background */
+  backdrop-filter: blur(10px); /* Blur effect for glass-like effect */
+  border-radius: 15px;
+  padding: 30px;
+  width: 80%;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.aboutItem:hover {
+  transform: translateY(-5px); /* Hover animation */
+}
+
+.aboutItemText {
+  color: var(--color-text);
+}
+
+.aboutItem h3 {
+  font-size: 1.8rem; /* Font size */
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.aboutItem p {
+  font-size: 1.6rem; /* Font size */
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 40px;
+  }
+
+  .aboutItem {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 1.8rem; /* Further reduced font size */
+  }
+
+  .aboutItem h3 {
+    font-size: 1.4rem; /* Further reduced font size */
+  }
+
+  .aboutItem p {
+    font-size: 1.2rem; /* Further reduced font size */
+  }
+}

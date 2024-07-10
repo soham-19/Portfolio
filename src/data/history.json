@@ -1,0 +1,18 @@
+[
+  {
+    "role": "Android Developer",
+    "organisation": "Flare Global Soft",
+    "startDate": "Dec, 2023",
+    "endDate": "Deb, 2024",
+    "experiences": ["Worked on Firebase", "Developed robust applications using Kotlin"],
+    "imageSrc": "history/android.png"
+  },
+  {
+    "role": "Data Analyst",
+    "organisation": "K.K.W.I.E.E.R.",
+    "startDate": "Dec, 2023",
+    "endDate": "Apr, 2024",
+    "experiences": ["Weather and Pollution Data Analysis", "Alert Notifications and Triggers"],
+    "imageSrc": "history/weather-forecast.png"
+  }
+]

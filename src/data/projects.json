@@ -1,0 +1,26 @@
+[
+  {
+    "title": "The Campus Diaries",
+    "imageSrc": "projects/campus.png",
+    "description": "A platform for campus events and interactions, built using, Express, and Node.js, and passport authentication.",
+    "skills": ["Bootstrap", "Express", "Node.js"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "AlgoVision+",
+    "imageSrc": "projects/algovis.png",
+    "description": "A visualizer for algorithms and data structures, developed with interactive features.",
+    "skills": ["EJS", "JavaScript", "CSS"],
+    "demo": "https://algovisionplus.onrender.com/",
+    "source": "https://github.com/soham-19/AlgoVisionPlus"
+  },
+  {
+    "title": "AutoGrade MCQ",
+    "imageSrc": "projects/project.png",
+    "description": "An automated MCQ grading system using machine learning and Python.",
+    "skills": ["Python", "Machine Learning", "OpenCV", "Contouring"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  }
+]
