@@ -17,10 +17,10 @@
   },
   {
     "title": "AutoGrade MCQ",
-    "imageSrc": "projects/project.png",
+    "imageSrc": "projects/mcq.png",
     "description": "An automated MCQ grading system using machine learning and Python.",
     "skills": ["Python", "Machine Learning", "OpenCV", "Contouring"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/soham-19/portfolio"
   }
 ]
