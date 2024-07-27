@@ -1,18 +1,15 @@
 .container {
-  background-color: var(--bg-dark);
+  background-color: #4b0082;
   padding: 40px;
   margin-top: 80px;
+  border-radius: 10px;
+  color: #ffffff;
 }
 
 .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #ffffff;
-}
-
-.text {
-  flex: 1;
 }
 
 .text h2 {
@@ -38,39 +35,34 @@
   margin-bottom: 10px;
 }
 
-.link img {
+.icon {
   width: 30px;
   height: 30px;
   margin-right: 10px;
 }
 
-.link a {
+.links a {
   font-size: 1rem;
   text-decoration: none;
   color: #e5e5e5;
-  font-style: italic;
 }
 
 .formContainer {
-  background-color: #e4e4e4;
+  background: rgba(255, 255, 255, 0.1);
   padding: 20px;
   margin-top: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.form {
-  display: grid;
-  gap: 10px;
-}
-
 .formGroup {
-  display: grid;
-  gap: 5px;
+  margin-bottom: 15px;
 }
 
 .formGroup label {
-  font-weight: 200;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 300;
 }
 
 .formGroup input,
@@ -80,11 +72,11 @@
   font-size: 1rem;
   border: 1px solid #ddd;
   border-radius: 4px;
+  background: rgb(255, 255, 255);
 }
 
 .formGroup textarea {
   resize: vertical;
-  /* min-height: 20; */
 }
 
 .submitBtn {
@@ -100,4 +92,15 @@
 
 .submitBtn:hover {
   background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links {
+    padding: 0;
+  }
 }

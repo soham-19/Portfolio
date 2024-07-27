@@ -5,51 +5,52 @@
   display: flex;
   flex-direction: column;
   border-radius: 15px;
-  background: rgba(241, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.1); /* Lighter glass-like effect */
+  backdrop-filter: blur(15px); /* Stronger blur effect */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
   padding: 20px;
-  width: 45%;
-  max-width: 500px;
-  margin: 20px;
-  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
-  width: 100vw;
-  position: relative;
+  width: 100%;
+  max-width: 400px; /* Updated max-width for a cleaner look */
+  margin: 20px auto; /* Centered horizontally */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
 }
 
 .container:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-15px); /* Slightly stronger hover effect */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  background: rgba(255, 255, 255, 0.3); /* Slightly more opaque background */
 }
 
 .image {
   border-radius: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   width: 100%;
-  height: auto;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container without distortion */
 }
 
 .title {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem; /* Slightly larger font size */
   font-weight: 600;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 12px; /* Adjusted margin */
+  text-align: center; /* Centered title */
 }
 
 .description {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  color: #cff1ff;
+  color: #d0e7ff; /* Slightly lighter description text color */
   margin-bottom: 20px;
+  text-align: center; /* Centered description */
 }
 
 .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px; /* Reduced gap for a tighter look */
   margin-bottom: 20px;
   padding: 0;
   list-style: none;
@@ -59,21 +60,23 @@
   font-family: 'Roboto', sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #fff;
-  background: #6c757d; /* Bootstrap dark color */
-  padding: 5px 15px;
-  border-radius: 20px;
-  transition: background 0.3s;
+  color: #000000;
+  background: #b4d9ff; /* Darker skill badge background */
+  padding: 6px 12px; /* Adjusted padding for a modern look */
+  border-radius: 25px; /* More rounded corners */
+  transition: background 0.3s ease-in-out;
 }
 
 .skill:hover {
-  background: #5a6268; /* Bootstrap dark hover color */
+  background: #2e3134; /* Slightly lighter on hover */
+  color: #fff;
 }
 
 .links {
   display: flex;
   justify-content: space-between;
   margin-top: auto;
+  flex-wrap: wrap; /* Wrap links on smaller screens */
 }
 
 .link {
@@ -84,13 +87,14 @@
   font-weight: 600;
   background: #007bff; /* Bootstrap primary color */
   padding: 10px 20px;
-  border-radius: 20px;
-  transition: background 0.3s, transform 0.3s;
+  border-radius: 25px; /* More rounded corners */
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+  text-align: center; /* Center text inside link */
 }
 
 .link:hover {
-  background: #0056b3; /* Bootstrap primary hover color */
-  transform: translateY(-2px);
+  background: #0056b3; /* Darker on hover */
+  transform: translateY(-3px); /* Slight lift effect */
 }
 
 .heart {
@@ -98,13 +102,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 100px;
-  background: linear-gradient(80deg, #ff0000, #ff1111, #ff143b, #ff1111); /* Gradient of pink/red colors */
+  font-size: 120px; /* Larger heart */
+  background: linear-gradient(45deg, #ff416c, #ff4b2b); /* Gradient with modern colors */
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   opacity: 0;
-  animation: pop 0.8s ease-in-out forwards;
+  animation: pop 1s ease-in-out forwards; /* Slower and smoother animation */
 }
 
 @keyframes pop {
@@ -113,19 +117,19 @@
     opacity: 0;
   }
   50% {
-    transform: translate(-50%, -50%) scale(2.5);
+    transform: translate(-50%, -50%) scale(1.2);
     opacity: 1;
   }
   100% {
-    transform: translate(-50%, -50%) scale(2);
+    transform: translate(-50%, -50%) scale(1);
     opacity: 0;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    width: 100%;
-    margin: 10px 0;
+    margin: 10px; /* Adjust margins on smaller screens */
+    max-width: 100%; /* Full width on smaller screens */
   }
 
   .links {
@@ -135,7 +139,6 @@
 
   .link {
     margin-bottom: 10px;
-    width: 80%;
-    text-align: center;
+    width: 90%;
   }
 }

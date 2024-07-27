@@ -1,10 +1,10 @@
 :root {
   /* Colours */
-  --color-text: #fff;
-  --color-primary: #576cbc;
-  --color-secondary: #19376d;
-  --color-dark: #0b2447;
-  --color-bg: #04152d;
+  --color-text: #fff; /* White */
+  --color-primary: #6a0dad; /* Medium Purple */
+  --color-secondary: #4b0082; /* Indigo */
+  --color-dark: #3a0a6f; /* Darker Purple */
+  --color-bg: #2a004f; /* Very Dark Purple */
 
   /* Fonts */
   --font-roboto: "Inter";

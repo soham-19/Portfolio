@@ -11,7 +11,7 @@ export const Hero = () => {
         className={styles.heroImg}
       />
       <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I'm Soham</h1>
+        <h1 className={styles.title}>Hello there, I'm Soham.....</h1>
         <p className={styles.description}>
           I'm a final year computer engineering student with expertise in stack MERN stack development.
           I also have deep passion for the data structures and algorithms.
